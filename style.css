@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Robot, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F9F9F9;
 }
 
 header {
@@ -9,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 24px;
-    width: 100vw;
+    background-color: white;
 }
 
 .wrapper-left {
@@ -22,7 +29,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-self: center;
+}
 
+.wrapper-right img {
+    width: 38px;
 }
 
 .search-box {
@@ -42,7 +52,6 @@ header {
 .search-box {
     width: 348px;
     height: 40px;
-    flex-shrink: 0;
     border: 1px solid #CCC;
 }
 
@@ -53,4 +62,98 @@ header {
     cursor: pointer;
 }
 
+main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
 
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    width: 55%;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    padding: 10px 0px;
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.video-description {
+    font-weight: 200;
+    color: grey
+}
+
+.channel-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.action-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.action-box img {
+    width: 42px
+}
+
+#name-channel {
+    font-weight: bolder;
+}
+
+#subs-number {
+    font-size: 14px;
+    color: rgb(97, 97, 97)
+}
+
+aside {
+    width: 30%;
+}
+
+ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: space-between;
+    gap: 20px;
+    padding-bottom: 8px;
+}
+
+ul li img {
+    width: 32%;
+}
+
+.aside-video-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aside-video-text h2 {
+    font-size: 14px;
+}
+
+.aside-video-text p {
+    font-size: 12px;
+}
